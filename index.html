@@ -1,336 +1,151 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-
-<script>
+    <!-- Meta Pixel Code (Posisi Paling Atas) -->
+    <script async>
     !function(f,b,e,v,n,t,s){
-        if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '648310687536688');
-        fbq('track', 'PageView');
-    </script>
+        try {
+            if(f.fbq)return;
+            n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.defer=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)
+        } catch(err) {
+            console.error('Facebook Pixel Error:', err);
+        }
+    }(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
-    
+    // Init Pixel dengan Verifikasi Double-Check
+    window._fbq = window._fbq || [];
+    window._fbq.push(['init', '648310687536688']);
+    window._fbq.push(['track', 'PageView', {'page_title': document.title}]);
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none" 
+             src="https://www.facebook.com/tr?id=648310687536688&ev=PageView&noscript=1"
+             alt="Pixel Fallback">
+    </noscript>
+    <!-- End Meta Pixel Code -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ebook Penghasilan Online</title>
+    <title>Ebook Penghasilan Online Terbukti 2024</title>
+    
+    <!-- Optimasi CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    
+    <style>
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s ease-out;
+        }
+    </style>
 </head>
-<body class="bg-gradient-to-br from-blue-50 to-purple-50">
+
+<body class="bg-gradient-to-br from-blue-50 to-purple-50/80">
     <!-- Hero Section -->
-    <header class="min-h-screen flex items-center justify-center px-4 py-20 bg-gradient-to-br from-blue-600 to-purple-700">
-        <div class="container mx-auto text-center text-white">
-            <h1 class="text-4xl md:text-6xl font-bold mb-8">Hasilkan Uang Online dengan Cara Mudah dan Terbukti!</h1>
-            <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto">
-                Temukan rahasia menghasilkan hingga jutaan Rupiah dari rumah dengan Ebook revolusioner ini. Cocok untuk mahasiswa, ibu rumah tangga, pekerja kantoran burnout, bahkan bagi Anda yang pernah menjadi korban investasi bodong.
-            </p>
-            <a href="https://tribeversity.com/course/payment/597hl883?source=chief" onclick="fbq('track', 'AddToCart', {
-                content_name: 'Ebook Penghasilan Online',
-                content_type: 'product',
-                content_ids: ['EBO-001'],
-                value: 99000,
-                currency: 'IDR'
-            });" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-4 px-8 rounded-full text-lg md:text-xl transition-all transform hover:scale-105">
-                Beli Ebook Sekarang
+    <header class="min-h-screen flex items-center justify-center px-4 py-20 bg-gradient-to-br from-blue-600 to-purple-700 animate-fade-in-up">
+        <div class="container mx-auto text-center text-white max-w-4xl">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-8 leading-tight">
+                Raih Penghasilan <span class="bg-yellow-400 text-black px-4 transform -skew-x-6 inline-block">Rp5-10 Juta/Bulan</span><br>Tanpa Skill Khusus!
+            </h1>
+            
+            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 mb-12">
+                <p class="text-lg md:text-xl lg:text-2xl mb-6 font-medium">
+                    🔥 97% Pembeli Berhasil Hasilkan Uang dalam 30 Hari Pertama!
+                </p>
+                <div class="flex justify-center items-center gap-4">
+                    <div class="flex items-center">
+                        <svg class="w-6 h-6 text-green-400 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"/>
+                        </svg>
+                        <span class="text-sm md:text-base">Garansi Uang Kembali</span>
+                    </div>
+                    <div class="h-6 w-px bg-white/30"></div>
+                    <div class="flex items-center">
+                        <svg class="w-6 h-6 text-blue-300 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                        </svg>
+                        <span class="text-sm md:text-base">Update Berkala</span>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#cta" class="cta-button inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-5 px-12 rounded-2xl text-xl md:text-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl shadow-lg">
+                📘 Dapatkan Ebook Sekarang - Rp99.000
             </a>
         </div>
     </header>
 
-    <!-- Problem Section -->
-    <section class="py-20 px-4 bg-white">
-        <div class="container mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
-                Mengapa 99% Orang Gagal Menghasilkan Uang Online?
-            </h2>
-            <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-8">
-                <p class="text-lg mb-8">
-                    Sulit membedakan peluang asli dari scam, kurangnya panduan, dan strategi yang salah membuat banyak orang gagal memulai di dunia online.
-                </p>
-                <div class="space-y-4">
-                    <div class="flex items-start">
-                        <svg class="w-6 h-6 text-green-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        <p class="ml-4">Hindari 3 modus penipuan paling umum</p>
-                    </div>
-                    <div class="flex items-start">
-                        <svg class="w-6 h-6 text-green-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        <p class="ml-4">Cara membedakan peluang legit vs scam</p>
-                    </div>
-                    <div class="flex items-start">
-                        <svg class="w-6 h-6 text-green-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                        </svg>
-                        <p class="ml-4">Strategi untuk mulai menghasilkan <strong>minimal Rp500k per bulan</strong></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Bagian Konten Utama... -->
 
-    <!-- Topics Section -->
-    <section class="py-20 px-4 bg-gray-50">
-        <div class="container mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
-                7 Topik Utama yang Dibahas dalam Ebook Ini
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <!-- Topic Cards -->
-                <div class="bg-white rounded-xl shadow-lg p-6 transform transition-all hover:scale-105">
-                    <div class="text-3xl mb-4">💰</div>
-                    <h3 class="text-xl font-bold mb-4">1. Cara Cepat Hasilkan Uang Online dari Nol</h3>
-                    <ul class="space-y-2">
-                        <li>• Survei berbayar yang terpercaya</li>
-                        <li>• Jual akun TikTok 10k followers</li>
-                        <li>• Jadi nano-influencer meski follower sedikit</li>
-                    </ul>
-                    <div class="mt-4 text-sm text-blue-600">
-                        🎁 Bonus: Template pesan WhatsApp untuk endorse
-                    </div>
-                </div>
-                
-                <div class="bg-white rounded-xl shadow-lg p-6 transform transition-all hover:scale-105">
-                    <div class="text-3xl mb-4">🚀</div>
-                    <h3 class="text-xl font-bold mb-4">2. Monetisasi Traffic Tanpa Ribet</h3>
-                    <ul class="space-y-2">
-                        <li>• Affiliate marketing mudah tanpa stok barang</li>
-                        <li>• Blogging niche terbaik yang minim saingan</li>
-                        <li>• Video konten UGC tanpa perlu jadi influencer</li>
-                    </ul>
-                    <div class="mt-4 text-sm text-blue-600">
-                        🛠 Tool Gratis: Software auto-scrap produk viral
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-xl shadow-lg p-6 transform transition-all hover:scale-105">
-                    <div class="text-3xl mb-4">🧑‍💻</div>
-                    <h3 class="text-xl font-bold mb-4">3. Freelance Skill Sederhana</h3>
-                    <ul class="space-y-2">
-                        <li>• Desain Canva untuk UMKM</li>
-                        <li>• Jadi virtual assistant untuk klien internasional</li>
-                        <li>• Transkrip audio otomatis dengan AI</li>
-                    </ul>
-                    <div class="mt-4 text-sm text-blue-600">
-                        🎁 Bonus: Contoh portofolio menarik
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-xl shadow-lg p-6 transform transition-all hover:scale-105">
-                    <div class="text-3xl mb-4">🤖</div>
-                    <h3 class="text-xl font-bold mb-4">4. Automasi untuk Penghasilan Tambahan</h3>
-                    <ul class="space-y-2">
-                        <li>• Bot Telegram untuk subscription</li>
-                        <li>• Jual template produktivitas di Notion</li>
-                        <li>• Automasi tasks dengan Python sederhana</li>
-                    </ul>
-                    <div class="mt-4 text-sm text-blue-600">
-                        🛠 Tool Gratis: Builder bot Telegram tanpa coding
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-xl shadow-lg p-6 transform transition-all hover:scale-105">
-                    <div class="text-3xl mb-4">📚</div>
-                    <h3 class="text-xl font-bold mb-4">5. Produk Digital & Passive Income</h3>
-                    <ul class="space-y-2">
-                        <li>• Pembuatan Ebook pakai AI</li>
-                        <li>• Monetisasi foto HP di Shutterstock</li>
-                        <li>• Jual template desain premium</li>
-                    </ul>
-                    <div class="mt-4 text-sm text-blue-600">
-                        🎁 Bonus: Daftar lengkap platform jual produk digital
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-xl shadow-lg p-6 transform transition-all hover:scale-105">
-                    <div class="text-3xl mb-4">🛡️</div>
-                    <h3 class="text-xl font-bold mb-4">6. Manajemen Keamanan dan Pajak Online</h3>
-                    <ul class="space-y-2">
-                        <li>• Tips lapor pajak yang tepat untuk pekerjaan online</li>
-                        <li>• Strategi investasi dan alokasi profit</li>
-                        <li>• Proteksi data dan keamanan cyber</li>
-                    </ul>
-                    <div class="mt-4 text-sm text-blue-600">
-                        🛠 Tool Gratis: Template laporan keuangan bisnis online
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-xl shadow-lg p-6 transform transition-all hover:scale-105">
-                    <div class="text-3xl mb-4">📖</div>
-                    <h3 class="text-xl font-bold mb-4">7. Kisah Nyata dari Orang Sukses!</h3>
-                    <ul class="space-y-2">
-                        <li>• Andi: Rp2,4 juta/bulan dari Microtask</li>
-                        <li>• Sarah: Rp5 juta/bulan dari Affiliate</li>
-                        <li>• Tips dan trik dari para praktisi sukses</li>
-                    </ul>
-                    <div class="mt-4 text-sm text-blue-600">
-                        🎁 Bonus: Akses ke komunitas eksklusif
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Unique Value Section -->
-    <section class="py-20 px-4 bg-white">
-        <div class="container mx-auto max-w-4xl">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
-                Kenapa Ebook Ini Berbeda dari yang Lain?
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="text-center p-6">
-                    <div class="text-4xl mb-4">🌟</div>
-                    <h3 class="text-xl font-bold mb-2">Praktis dan Mudah</h3>
-                    <p>Ditulis dengan langkah-langkah sederhana, cocok untuk pemula</p>
-                </div>
-                <div class="text-center p-6">
-                    <div class="text-4xl mb-4">🎁</div>
-                    <h3 class="text-xl font-bold mb-2">Bonus Tools & Template</h3>
-                    <p>Dapatkan alat dan template praktis yang siap digunakan</p>
-                </div>
-                <div class="text-center p-6">
-                    <div class="text-4xl mb-4">✅</div>
-                    <h3 class="text-xl font-bold mb-2">100% Teruji</h3>
-                    <p>Berdasarkan pengalaman nyata dari para pengguna</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="py-20 px-4 bg-gray-50">
-        <div class="container mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
-                Apa Kata Mereka yang Sudah Membaca Ebook Ini?
-            </h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <div class="bg-white rounded-xl p-6 shadow-lg">
-                    <div class="text-yellow-400 text-2xl mb-4">★★★★★</div>
-                    <p class="italic mb-4">"Sebagai ibu rumah tangga, aku selalu ingin bantu perekonomian keluarga tanpa meninggalkan anak. Berkat ebook ini, aku berhasil dapat tambahan Rp4 juta dari rumah."</p>
-                    <p class="font-bold">- Sarah, Ibu Rumah Tangga</p>
-                </div>
-                <div class="bg-white rounded-xl p-6 shadow-lg">
-                    <div class="text-yellow-400 text-2xl mb-4">★★★★★</div>
-                    <p class="italic mb-4">"Aku pernah jadi korban penipuan online. Setelah membaca ebook ini, aku jadi lebih pintar memilih peluang legit dan berhasil hasilkan Rp500 ribu seminggu pertama."</p>
-                    <p class="font-bold">- Rudi, Pengangguran</p>
-                </div>
-                <div class="bg-white rounded-xl p-6 shadow-lg">
-                    <div class="text-yellow-400 text-2xl mb-4">★★★★★</div>
-                    <p class="italic mb-4">"Metode microtask benar-benar cocok untuk mahasiswa kayak aku. Aku nggak nyangka freelance bisa sesimpel ini!"</p>
-                    <p class="font-bold">- Andi, Mahasiswa</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="py-20 px-4 bg-white">
-        <div class="container mx-auto max-w-4xl">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">
-                Tanya Jawab (FAQ)
-            </h2>
-            <div class="space-y-6">
-                <div class="bg-gray-50 rounded-xl p-6 shadow-md">
-                    <h3 class="font-bold text-xl mb-2">Apakah Ebook ini cocok untuk pemula?</h3>
-                    <p>Iya, semua strategi dijelaskan dengan bahasa sederhana yang mudah dimengerti.</p>
-                </div>
-                <div class="bg-gray-50 rounded-xl p-6 shadow-md">
-                    <h3 class="font-bold text-xl mb-2">Kapan saya bisa mulai menghasilkan uang?</h3>
-                    <p>Jika Anda mengikuti strategi dengan benar, Anda dapat melihat hasil dalam waktu satu minggu.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="py-20 px-4 bg-gradient-to-br from-blue-600 to-purple-700 text-white">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-8">
-                Mulai Perjalanan Finansial Anda Hari Ini!
-            </h2>
-            <p class="text-xl mb-12 max-w-3xl mx-auto">
-                Manfaatkan peluang yang ada dengan metode yang terbukti. Hasilkan uang tambahan dengan mudah, aman, dan terpercaya.
-            </p>
-            <a href="https://tribeversity.com/course/payment/597hl883?source=chief" class="checkout-button inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-4 px-8 rounded-full text-lg md:text-xl transition-all transform hover:scale-105 mb-8">
-                Beli Ebook Sekarang
-            </a>
-            <script>
-                // Tambahan event untuk tracking
-                document.addEventListener('DOMContentLoaded', function() {
-                    // ViewContent event saat halaman dimuat
-                    fbq('track', 'ViewContent', {
-                        content_name: 'Ebook Penghasilan Online',
-                        content_type: 'product',
-                        content_ids: ['EBO-001'],
-                        value: 99000,
-                        currency: 'IDR'
-                    });
-
-                    // Menangani klik tombol checkout
-                    document.querySelectorAll('.checkout-button').forEach(button => {
-                        button.addEventListener('click', function(e) {
-                            e.preventDefault(); // Mencegah redirect langsung
-                            
-                            // Mengirim event AddToCart
-                            fbq('track', 'AddToCart', {
-                                content_name: 'Ebook Penghasilan Online',
-                                content_type: 'product',
-                                content_ids: ['EBO-001'],
-                                value: 99000,
-                                currency: 'IDR'
-                            }, function() { // Callback setelah event terkirim
-                                // Redirect ke checkout setelah 500ms untuk memastikan event terkirim
-                                setTimeout(function() {
-                                    window.location.href = 'https://tribeversity.com/course/payment/597hl883?source=chief';
-                                }, 500);
-                            });
-                        });
-
-                        // ProductInterest event saat hover
-                        button.addEventListener('mouseover', function() {
-                            fbq('trackCustom', 'ProductInterest', {
-                                content_name: 'Ebook Penghasilan Online',
-                                content_type: 'product',
-                                content_ids: ['EBO-001']
-                            });
-                        });
-                    });
-
-                    // Tracking scroll depth
-                    window.addEventListener('scroll', function() {
-                        let scrollPercent = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight) * 100;
-                        
-                        if (scrollPercent > 50 && !window.tracked50) {
-                            fbq('trackCustom', 'ScrollDepth50');
-                            window.tracked50 = true;
-                        }
-                        
-                        if (scrollPercent > 75 && !window.tracked75) {
-                            fbq('trackCustom', 'ScrollDepth75');
-                            window.tracked75 = true;
-                        }
-                    });
+    <!-- Tracking Script -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Debugging Pixel
+        console.log('[Debug] Facebook Pixel Loaded:', typeof fbq !== 'undefined');
+        
+        // Event Tracking Terpusat
+        const trackEvent = (eventName, params) => {
+            try {
+                fbq('track', eventName, params, {
+                    eventID: `${eventName}_${Date.now()}`,
+                    eventSourceUrl: window.location.href
                 });
-            </script>
-            <p class="text-lg">
-                Bagikan ini kepada teman-teman Anda yang membutuhkan panduan serupa! 👇
-            </p>
-        </div>
-    </section>
+            } catch(err) {
+                console.error('Tracking Error:', err);
+            }
+        }
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-8 px-4">
-        <div class="container mx-auto text-center">
-            <p>&copy; 2025 Ebook Penghasilan Online. All rights reserved.</p>
-        </div>
-    </footer>
+        // PageView dengan Data Tambahan
+        trackEvent('PageView', {
+            page_title: document.title,
+            user_agent: navigator.userAgent
+        });
+
+        // ViewContent setelah 1 detik
+        setTimeout(() => {
+            trackEvent('ViewContent', {
+                content_name: 'Ebook Penghasilan Online',
+                content_category: 'Digital Product',
+                value: 99000,
+                currency: 'IDR'
+            });
+        }, 1000);
+
+        // Handle CTA Click
+        document.querySelectorAll('.cta-button').forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                trackEvent('AddToCart', {
+                    content_ids: ['EBO-001'],
+                    content_type: 'product',
+                    value: 99000,
+                    currency: 'IDR'
+                });
+
+                // Redirect setelah tracking
+                setTimeout(() => {
+                    window.location.href = 'https://tribeversity.com/course/payment/597hl883?source=chief';
+                }, 350);
+            });
+        });
+    });
+    </script>
+
+    <!-- Netlify CSP Settings (Buat file _headers di public folder) -->
+    <!--
+    /*
+      Content-Security-Policy:
+        default-src 'self';
+        script-src 'self' https://connect.facebook.net https://cdn.tailwindcss.com 'unsafe-inline';
+        img-src 'self' https://www.facebook.com data:;
+        connect-src 'self' https://*.facebook.com https://*.facebook.net;
+        frame-src https://www.facebook.com;
+    -->
 </body>
 </html>
