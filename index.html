@@ -260,13 +260,7 @@
             <p class="text-xl mb-12 max-w-3xl mx-auto">
                 Manfaatkan peluang yang ada dengan metode yang terbukti. Hasilkan uang tambahan dengan mudah, aman, dan terpercaya.
             </p>
-            <a href="https://tribeversity.com/course/payment/597hl883?source=chief" onclick="fbq('track', 'AddToCart', {
-                content_name: 'Ebook Penghasilan Online',
-                content_type: 'product',
-                content_ids: ['EBO-001'],
-                value: 99000,
-                currency: 'IDR'
-            });" class="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-4 px-8 rounded-full text-lg md:text-xl transition-all transform hover:scale-105 mb-8">
+            <a href="https://tribeversity.com/course/payment/597hl883?source=chief" class="checkout-button inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-4 px-8 rounded-full text-lg md:text-xl transition-all transform hover:scale-105 mb-8">
                 Beli Ebook Sekarang
             </a>
             <script>
@@ -279,6 +273,36 @@
                         content_ids: ['EBO-001'],
                         value: 99000,
                         currency: 'IDR'
+                    });
+
+                    // Menangani klik tombol checkout
+                    document.querySelectorAll('.checkout-button').forEach(button => {
+                        button.addEventListener('click', function(e) {
+                            e.preventDefault(); // Mencegah redirect langsung
+                            
+                            // Mengirim event AddToCart
+                            fbq('track', 'AddToCart', {
+                                content_name: 'Ebook Penghasilan Online',
+                                content_type: 'product',
+                                content_ids: ['EBO-001'],
+                                value: 99000,
+                                currency: 'IDR'
+                            }, function() { // Callback setelah event terkirim
+                                // Redirect ke checkout setelah 500ms untuk memastikan event terkirim
+                                setTimeout(function() {
+                                    window.location.href = 'https://tribeversity.com/course/payment/597hl883?source=chief';
+                                }, 500);
+                            });
+                        });
+
+                        // ProductInterest event saat hover
+                        button.addEventListener('mouseover', function() {
+                            fbq('trackCustom', 'ProductInterest', {
+                                content_name: 'Ebook Penghasilan Online',
+                                content_type: 'product',
+                                content_ids: ['EBO-001']
+                            });
+                        });
                     });
 
                     // Tracking scroll depth
@@ -294,17 +318,6 @@
                             fbq('trackCustom', 'ScrollDepth75');
                             window.tracked75 = true;
                         }
-                    });
-
-                    // Add ProductInterest event when user hovers over the button
-                    document.querySelectorAll('a[href="/checkout"]').forEach(button => {
-                        button.addEventListener('mouseover', function() {
-                            fbq('trackCustom', 'ProductInterest', {
-                                content_name: 'Ebook Penghasilan Online',
-                                content_type: 'product',
-                                content_ids: ['EBO-001']
-                            });
-                        });
                     });
                 });
             </script>
