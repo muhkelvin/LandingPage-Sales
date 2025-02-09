@@ -6,8 +6,15 @@
     <title>Ebook Penghasilan Online</title>
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Meta Pixel Code -->
+    <!-- Meta Pixel Code - Optimized -->
     <script>
+    // Preload Facebook Pixel
+    var script = document.createElement('script');
+    script.src = 'https://connect.facebook.net/en_US/fbevents.js';
+    script.async = true;
+    document.head.appendChild(script);
+
+    // Initialize FB Pixel as soon as possible
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -16,8 +23,28 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
+
+    // Initialize pixel
     fbq('init', '648310687536688');
+    
+    // Track PageView immediately
     fbq('track', 'PageView');
+    
+    // Add event listener when DOM is ready
+    document.addEventListener('DOMContentLoaded', function() {
+        // Add click event listeners to all CTA buttons
+        const buyButtons = document.querySelectorAll('a[href*="tribeversity.com/course/payment"]');
+        buyButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                fbq('track', 'AddToCart', {
+                    content_name: 'Ebook Penghasilan Online',
+                    content_type: 'product',
+                    currency: 'IDR',
+                    value: 99000
+                });
+            });
+        });
+    });
     </script>
     <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=648310687536688&ev=PageView&noscript=1"
